@@ -1,0 +1,60 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their functions,     │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# EDIT: change 'sample-incubator' to the code from your IG Proposal
+id: hl7.fhir.uv.sample-incubator
+# EDIT: change 'sample-incubator' to the code from your IG Proposal
+canonical: http://hl7.org/fhir/uv/sample-incubator
+# EDIT: change 'SampleIncubatorImplementationGuide' to the name of your IG
+name: SampleIncubatorImplementationGuide
+# EDIT: change 'Sample Incubator Implementation Guide' to the title of your IG
+title: Sample Incubator Implementation Guide
+# EDIT: update the description to describe your IG
+description: A Guide that defines SampleResource as Additional Resources in FHIR
+status: active # draft | active | retired | unknown
+version: 0.1.0
+fhirVersion: 6.0.0-ballot3
+copyrightYear: 2025+
+releaseLabel: ci-build
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+# EDIT: update the publisher to the correct WG
+publisher:
+  name: HL7 International / Public Health
+  url: http://www.hl7.org/Special/committees/pher
+  email: pher@lists.HL7.org
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 1
+# EDIT: update the work group
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: pher
+
+# EDIT: you may need to add dependencies for your IG, see https://fshschool.org/docs/sushi/configuration/#implementationguide for more details
+# dependencies:
+
+# EDIT: these are the parameters for your IG, you can add more as needed
+parameters:
+  # EDIT: the path-resource parameter specifies the folder where your FHIR additiona resources are located (if you have multiple types of resources, you can list multiple path-resource parameters on separate lines with a dash in front of each)
+  # path-resource: input/resources/sampleadditionalresources
+  # EDIT: the additional-resource parameter specifies a specific additional resource to include in your IG (if there is more than one additional resource, list them on separate lines with a dash in front of each)
+  # additional-resource: input/resources/sampleadditionalresources/StructureDefinition-<ResourceName>.xml
+  special-url-base: http://hl7.org/fhir
+
+# EDIT: these are the pages that will be included in your IG, you can add more as needed
+pages:
+  index.md:
+    title: IG Home
+  changes.md:
+    title: Change Log
+ 
+# EDIT: customize the menu for your IG as needed
+menu:
+  Home: index.html
+  FHIR Artifacts:
+    Artifacts: artifacts.html
+    Change Log: changes.html

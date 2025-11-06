@@ -5,8 +5,6 @@
 /_gencontinuous.sh
 /_genonce.bat
 /_genonce.sh
-/_updatePublisher.bat
-/_updatePublisher.new.bat
-/_updatePublisher.sh
 /fsh-generated
 /template
+/FHIR-sample-incubator.xml
