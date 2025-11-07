@@ -11,7 +11,7 @@ This sample IG is a skeleton IG to clone for use in creating an "incubator" IG t
 ### Set Up Github
 - Create a Github repository for your incubator IG in the [HL7 Github](https://github.com/HL7)
     - ask HL7 IT Support to set up a webhook so the CI Build will run when you push changes to Git
-- Clone this (sample-incubator-ig) repo to your local machine
+- Clone this ([sample-incubator-ig](https://github.com/HL7/sample-incubator-ig)) repo to your local machine
 - Copy the folder structure and all the files into your incubator IG
   - Note: the .gitignore file contains paths and files that Git will ignore on commit/push - these are files and folders that do not need to be in the Git repo because they are not needed for the build
   - Note: the input/fsh folder contains a file called dummy-fsh-file.fsh - this folder and file are needed for Sushi to run and create the main IG file. If later, you end up adding profiles etc, that can be created in Sushi, you can delete this file
